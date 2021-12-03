@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodersLinkProjectWebApp", "CodersLinkProjectWebApp\CodersLinkProjectWebApp.csproj", "{2E277E08-F2D2-4ED2-9EF7-D71B77893DF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodersLinkProjectWebApp", "CodersLinkProjectWebApp\CodersLinkProjectWebApp.csproj", "{2E277E08-F2D2-4ED2-9EF7-D71B77893DF3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{867FE105-F691-4588-8A47-70244EE78D60} = {867FE105-F691-4588-8A47-70244EE78D60}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodersLinkProjectWebApi", "CodersLinkProjectWebApi\CodersLinkProjectWebApi.csproj", "{867FE105-F691-4588-8A47-70244EE78D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodersLinkProjectWebApi", "CodersLinkProjectWebApi\CodersLinkProjectWebApi.csproj", "{867FE105-F691-4588-8A47-70244EE78D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,12 +1,19 @@
+using CodersLinkProjectWebApi.Data;
+using CodersLinkProjectWebApi.Mapper;
+using CodersLinkProjectWebApi.Repository;
+using CodersLinkProjectWebApi.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +33,20 @@ namespace CodersLinkProjectWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<AppDBContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConn")));
+            services.AddScoped<IUsrDataRepo, UsrDataRepo>();
+            services.AddAutoMapper(typeof(UsrDataMappings));
+            services.AddApiVersioning(options =>
+            {
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+                options.ReportApiVersions = true;
+            });
+            services.AddVersionedApiExplorer(options =>
+            {
+                options.GroupNameFormat = "'v'VVV";
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
