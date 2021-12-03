@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodersLinkProjectWebApp", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodersLinkProjectWebApi", "CodersLinkProjectWebApi\CodersLinkProjectWebApi.csproj", "{867FE105-F691-4588-8A47-70244EE78D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodersLinkProjectWebAppTests", "CodersLinkProjectWebAppTests\CodersLinkProjectWebAppTests.csproj", "{87BD43A6-D7A4-407F-B2AA-732FC0698820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{867FE105-F691-4588-8A47-70244EE78D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{867FE105-F691-4588-8A47-70244EE78D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{867FE105-F691-4588-8A47-70244EE78D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87BD43A6-D7A4-407F-B2AA-732FC0698820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BD43A6-D7A4-407F-B2AA-732FC0698820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BD43A6-D7A4-407F-B2AA-732FC0698820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BD43A6-D7A4-407F-B2AA-732FC0698820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
