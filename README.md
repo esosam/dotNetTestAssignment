@@ -1,4 +1,4 @@
-# CodersLinkAssignment
+# dotNetTestAssignment
 dotNet Project Test Assignment
 
 Requirements:
