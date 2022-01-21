@@ -16,7 +16,7 @@ Requirements:
 7.	Security is not required for this exercise.
 
 
-Authors
+Author
 Esteban Sosa - esosa@edksis.com http://edksis.com/
 
 License
