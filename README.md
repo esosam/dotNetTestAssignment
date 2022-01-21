@@ -1,5 +1,5 @@
 # CodersLinkAssignment
-Coders Link dotNet Project Assignment
+dotNet Project Test Assignment
 
 Requirements:
 1.	Provide a simple html page in which a user can enter the following.  The page merely needs to be functional and does not need to be styled in any way.
@@ -14,3 +14,16 @@ Requirements:
 5.	At least one automated test must be provided which tests one of your .net components.
 6.	Application should run in MS Internet Information Server.
 7.	Security is not required for this exercise.
+
+
+Authors
+Esteban Sosa - esosa@edksis.com http://edksis.com/
+
+License
+this dotNet Project Test Assignment is free and unencumbered public domain software. For more information, see http://unlicense.org/ or the accompanying UNLICENSE file.
+
+I dedicate any and all copyright interest in this software to the
+public domain. I make this dedication for the benefit of the public at
+large and to the detriment of my heirs and successors. I intend this
+dedication to be an overt act of relinquishment in perpetuity of all
+present and future rights to this software under copyright law.
